@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaShop | Categories</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styl.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="logo">NovaShop</div>
+
+    <nav class="navbar">
+      <a href="in.html">Home</a>
+      <a href="Mainweb.html">Products</a>
+      <a href="cat.html" class="active">Categories</a>
+      <a href="cont.html">Contact</a>
+    </nav>
+
+  </header>
+
+  <section class="page-title">
+    <h1>Categories</h1>
+    <p>Browse products by category.</p>
+  </section>
+
+  <section class="categories-grid">
+
+    <div class="category-card">
+      <h2>👕 Fashion</h2>
+      <p>Latest fashion trends.</p>
+    </div>
+
+    <div class="category-card">
+      <h2>📱 Electronics</h2>
+      <p>Smart gadgets & devices.</p>
+    </div>
+
+    <div class="category-card">
+      <h2>🏠 Home Decor</h2>
+      <p>Beautiful items for your home.</p>
+    </div>
+
+    <div class="category-card">
+      <h2>🎧 Accessories</h2>
+      <p>Premium accessories collection.</p>
+    </div>
+
+  </section>
+
+  <script>const cards=document.querySelectorAll(".category-card");
+  cards.forEach(card=>{card.style.cursor="pointer";
+  card.addEventListener("mouseover",()=>{card.style.transform="scale(1.05)";
+  card.style.transition="0.3s";card.style.background="rgb(75,75,250)";card.style.color="white"});
+  card.addEventListener("mouseout",()=>{card.style.transform="scale(1)";
+  card.style.background="white";card.style.color="black"});
+  card.addEventListener("click",()=>{alert(card.querySelector("h2").innerText+" category selected!")})});
+  </script>
+
+</body>
+</html>
